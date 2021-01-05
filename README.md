@@ -34,6 +34,7 @@ The software is made available under the Smithsonian Institution [terms of use](
 9. [Tips and Tricks](#tips-and-tricks)  
 10. [Bug Reports and Feature Requests](#bug-reports-and-feature-requests)
 11. [Citation](#citation)  
+12. [References](#References)  
 
 ## Installation  
 ### Basic Installation  
@@ -160,7 +161,7 @@ The parameter file is a tab-separated file giving bait-specific filtration infor
 * Kept: Whether the bait was retained in the final filtered set. 
 
 ### Sequence Annotations  
-BaitsTools reserves the the "#" character for program-specific FASTA/FASTQ annotations. Append these annotations to end of sequence headers. The following annotations are currently available:  
+BaitsTools reserves the "#" character for program-specific FASTA/FASTQ annotations. Append these annotations to end of sequence headers. The following annotations are currently available:  
 `#circ`: Appending this annotation denotes that a sequence is circular. Otherwise the sequence is assumed to be linear.  
 `#bed`: Appending this annotation changes the absolute BED starting coordinate from the default of 0 to the specified coordinate (e.g. "#bed80" changes the starting coordinate to 80). This annotation only affects the [tilebaits](#tilebaits) and [aln2baits](#aln2baits) subcommands. If the `variant` definition is used in aln2baits, the absolute BED coordinates will be given relative to the first sequence in the alignment.  
 `#loc`: Appending this annotation determines the locus alignment to which a sequence belongs (e.g. "#locSLCA42" assigns the sequence to locus SLCA42). This annotation allows [aln2baits](#aln2baits) to process alignments from multiple loci simultaneously.  
@@ -307,7 +308,7 @@ Please cite:
 Campana, M.G. (2018) BaitsTools: software for hybridization capture bait design. *Molecular Ecology Resources*, __18__, 356-361. doi: [10.1111/1755-0998.12721](http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12721/abstract).  
 
 ## References  
-1. Howley, P.M., Israel, M.A., Law, M.F., Martin, M.A,. (1979) A rapid method for detecting and mapping homology between heterologous DNAs. Evaluation of polyomavirus genomes. *The Journal of Biological Chemistry*, __254__, 4876-4883.  
+1. Howley, P.M., Israel, M.A., Law, M.F., Martin, M.A. (1979) A rapid method for detecting and mapping homology between heterologous DNAs. Evaluation of polyomavirus genomes. *The Journal of Biological Chemistry*, __254__, 4876-4883.  
 2. Sambrook, J.F., Russell, D.W. (eds). (2001) Molecular Cloning: A Laboratory Manual. Cold Spring Harbor Laboratory Press: Cold Spring Harbor, NY.  
 3. Kibbe, W.A. (2007) OligoCalc: an online oligonucleotide properties calculator. *Nucleic Acids Res*, __35__, W43-W46.  
 4. Kibbe, W.A. (2015) Oligo Calc: Oligonucleotide Properties Calculator. Version 3.27. (http://biotools.nubic.northwestern.edu/OligoCalc.html.)   
